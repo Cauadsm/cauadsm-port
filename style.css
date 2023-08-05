@@ -1,3 +1,59 @@
-header {
-    background-color: green;
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+* {
+    margin: 0;
 }
+body{
+    blur
+    background-size: 100%;
+    background-image: url("https://img.freepik.com/fotos-premium/uma-folha-verde-com-gotas-de-agua-nela-gotas-de-agua-em-uma-folha-apos-a-chuva_781958-483.jpg?w=2000");
+}
+header {
+    height: 8rem;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    border-radius: 2px;
+}
+
+
+h1 {
+    font-family: 'Borel', cursive;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    width: fit-content;
+    justify-self: center;
+}
+
+.nav-menu a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;    
+    font-weight: bold;
+    background-color: rgb(151, 151, 151);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+
+}
+.nav-menu a:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    transition: ease .4s;
+    background-color: white;
+
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    place-self: center;
+
+}
+
