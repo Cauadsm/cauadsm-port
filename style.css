@@ -7,21 +7,23 @@ body {
 }
 
 body {
-    background: #1D1D1B;
+    background: #1D1D1B;    
 }
-
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 71px;
     background: #1D1D1B;
 }
 
+
+.main-content{
+
+}
+
 .nav-menu {
     display: flex;
-    align-items: center;
-    text-align: center;
     margin: 0 auto;
 }
 
