@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@300;400;500;700&family=Teko:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
 html,
 body {
@@ -29,11 +29,17 @@ header {
     text-decoration: none;
     padding: 0 45px;
     color: #b6b6b6;
-    font-family: Lobster Two;
+    font-family: IBM Plex Mono, sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: ease .2s;
+}
+
+.nav-menu a:hover{
+    color: white;
+    transform: scale(1.1);
 }
 
 .nav-social {
