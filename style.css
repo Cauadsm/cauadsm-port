@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Magra&display=swap');
+
 
 html,
 body {
@@ -7,8 +9,9 @@ body {
 }
 
 body {
-    background: #1D1D1B;    
+    background: #1D1D1B;
 }
+
 header {
     display: flex;
     justify-content: space-around;
@@ -17,9 +20,51 @@ header {
     background: #1D1D1B;
 }
 
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
 
-.main-content{
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin: 228px 503px 0 213px;
+}
 
+.about h1 {
+    font-family: IBM Plex Mono, sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(270deg, #F00 0%, #FFF500 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about h2 {
+    font-family: IBM Plex Mono, sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+}
+
+.about p {
+    color: #BEBEBE;
+    font-family: Magra, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .nav-menu {
@@ -39,7 +84,7 @@ header {
     transition: ease .2s;
 }
 
-.nav-menu a:hover{
+.nav-menu a:hover {
     color: white;
     transform: scale(1.1);
 }
