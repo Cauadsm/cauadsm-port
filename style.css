@@ -1,105 +1,122 @@
+/* 
+    UTILITÁRIOS
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Magra&display=swap');
 
+:root {
+    --background: #1D1D1B;
+    --font: #BEBEBE;
+}
 
-html,
-body {
+* {
     margin: 0;
     padding: 0;
 }
 
+/* 
+    CSS'S
+*/
+
 body {
-    background: #1D1D1B;
+    background-color: var(--background);
 }
 
 header {
+    font-family: 'IBM Plex Mono';
+    height: 10vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 71px;
-    background: #1D1D1B;
-}
-
-h1,
-h2 {
-    margin: 0;
-    padding: 0;
-}
-
-.main-content {
-    display: flex;
-    justify-content: center;
-    margin: 228px 503px 0 213px;
-}
-
-.about h1 {
-    font-family: IBM Plex Mono, sans-serif;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    background: linear-gradient(270deg, #F00 0%, #FFF500 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-}
-
-.about h2 {
-    font-family: IBM Plex Mono, sans-serif;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    color: white;
-}
-
-.about p {
-    color: #BEBEBE;
-    font-family: Magra, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.nav-menu {
-    display: flex;
-    margin: 0 auto;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    padding: 0 45px;
-    color: #b6b6b6;
-    font-family: IBM Plex Mono, sans-serif;
+    justify-content: space-between;
+    padding: 50px;
     font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+}
+
+header a {
+    color: var(--font);
+    text-decoration: none;
     transition: ease .2s;
 }
 
-.nav-menu a:hover {
-    color: white;
-    transform: scale(1.1);
+header a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 2px #fff;
 }
 
-.nav-social {
-    margin-right: 240px;
+main {
+    width: fit-content;
+    display: grid;
+    place-items: center;
+    margin: 15%;
 }
 
-.nav-social img {
-    padding: 0 15px;
+.about {
+    width: 70%;
 }
 
-.icon img {
+/* 
+    CLASSES E IDS
+*/
+
+.img-social {
+    transition: ease .2s;
+}
+
+.img-social:hover {
+    fill: #fff;
+}
+
+.icon a img {
     width: 64px;
-    height: 60px;
-    margin: 0 130px;
-    margin-right: auto;
 }
+
+.about {
+    display: grid;
+    gap: 20px 0;
+}
+.about h1 {
+    font-family: 'IBM Plex Mono';
+    background: linear-gradient(270deg, #F00 25%, #FFF500 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.about h2 {
+    font-family: 'IBM Plex Mono';
+    color: #fff;
+    font-size: 55px;
+}
+
+.about p {
+    color: var(--font);
+    font-family: 'Magra';
+    font-size: 20px;
+}
+
+#cv {
+    background: linear-gradient(90deg, #F8DB03 0%, #A81C1B 100%);
+    font-size: 25px;
+    font-family: 'Magra';
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 17px 60px;
+    border-radius: 2.6875rem;
+    box-shadow: -1px -4px 68px -1px rgba(248, 4, 4, 0.25);
+    margin-top: 50px;
+}
+
+#cv:hover {
+    background: linear-gradient(90deg, rgba(233, 225, 0, 0.959) 0%, rgb(230, 0, 0) 100%);
+} 
+
+
+/* 
+    MEDIA-QUERIES
+*/
