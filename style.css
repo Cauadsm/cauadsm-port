@@ -110,6 +110,7 @@ CLASSES E IDS
     border-radius: 2.6875rem;
     box-shadow: -1px -4px 68px -1px rgba(248, 4, 4, 0.25);
     margin-top: 50px;
+    transition: ease .2s;
 }
 
 #cv:hover {
