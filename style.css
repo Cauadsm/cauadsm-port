@@ -51,13 +51,13 @@ main {
     margin: 15%;
 }
 
+
+/* 
+CLASSES E IDS
+*/
 .about {
     width: 70%;
 }
-
-/* 
-    CLASSES E IDS
-*/
 
 .img-social {
     transition: ease .2s;
@@ -116,7 +116,19 @@ main {
     background: linear-gradient(90deg, rgba(233, 225, 0, 0.959) 0%, rgb(230, 0, 0) 100%);
 } 
 
+.circle-1 {
+    position: absolute;
+    top: 24vh;
+    right: 22vw;
+    z-index: -1;
+}
 
+.circle-2{
+    position: absolute;
+    top: 30vh;
+    right: 22vw;
+    z-index: -1;
+}
 /* 
     MEDIA-QUERIES
 */
